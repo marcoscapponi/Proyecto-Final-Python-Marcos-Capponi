@@ -1,0 +1,5 @@
+{% for e in estudios %}
+    <li>{{e}}</li>
+    <button>
+        <a href="{% url 'editarEstudios' e.nombreEstudio %}"> Editar</a>
+    </button>

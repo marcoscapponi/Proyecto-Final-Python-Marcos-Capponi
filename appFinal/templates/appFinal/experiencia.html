@@ -1,0 +1,15 @@
+{% extends "appFinal/base.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<h1>Experiencia</h1>
+<br>
+{% for experiencia in experiencias %}
+    <li>
+        Puesto: {{experiencia.puestoTrabajo}}<br>
+        Duracion: {{experiencia.duracion}}<br>
+        Nombre lugar: {{experiencia.nombreLugar}}<br>
+        Locacion: {{experiencia.locacion}}
+    </li>
+    <br>
+{% endfor %}
+{% endblock contenidoQueCambia %}

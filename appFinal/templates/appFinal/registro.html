@@ -1,0 +1,19 @@
+{% extends 'appFinal/base.html' %}
+{% block contenidoQueCambia %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <H2>Registrese aqui</H2>
+    <form action="" method="POST">
+        {% csrf_token %}
+        {{form.as_p}}
+        <button type="submit"> Registrarse</button>
+    </form>
+</body>
+</html>
+{% endblock contenidoQueCambia %}

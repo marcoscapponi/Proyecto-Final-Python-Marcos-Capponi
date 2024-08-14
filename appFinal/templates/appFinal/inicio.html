@@ -1,0 +1,38 @@
+{% extends "appFinal/base.html" %}
+
+{% block contenidoQueCambia %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <h1 class="mb-5 text-center">Bienvenidos a mi blog</h1>
+        <h5>En este blog podran navegar a traves de diferentes paginas donde encontraran mis estudios realizados, mi experiencia laboral, y mas.</h5>
+        <p></p>
+        <br>    
+    <div class="container d-flex justify-content-between text-center">
+        <div class="col mx-3">
+            <h2>Estudios</h2>
+            <a href="{% url 'estudies'%}">Leer más</a>
+        </div>
+        <div class="col mx-3">
+            <h2>Experiencia</h2>
+            <a href="{% url 'experience' %}">Leer más</a>       
+        </div>
+        <div class="col mx-3">
+            <h2>Habilidades</h2>
+            <a href="{% url 'skills' %}">Leer más</a>
+        </div>
+        <div class="col mx-3">
+            <h2>SobreMi</h2>
+            <a href="{% url 'aboutme' %}">Leer más</a>  
+        </div> 
+    </div>
+<br>
+</body>
+</html>
+
+{% endblock %}

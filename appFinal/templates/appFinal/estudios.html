@@ -1,0 +1,14 @@
+{% extends "appFinal/base.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<h1>Estudios</h1>
+<br>
+{% for estudio in estudios %}
+    <li>
+        Nombre Estudio: {{estudio.nombreEstudio}}<br>
+        Duracion: {{estudio.duracion}}<br>
+        Instituto: {{estudio.instituto}}
+    </li>
+    <br>
+{% endfor %}
+{% endblock contenidoQueCambia %}

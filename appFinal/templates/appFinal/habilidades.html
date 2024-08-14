@@ -1,0 +1,14 @@
+{% extends "appFinal/base.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+<h1>Habilidades e Idiomas</h1>
+<br>
+{% for habilidad in habilidades %}
+    <li>
+        Habilidad: {{habilidad.habilidad}}<br>
+        Idioma: {{habilidad.idioma}}<br>
+        Nivel: {{habilidad.nivelIdioma}}
+    </li>
+    <br>
+{% endfor %}
+{% endblock contenidoQueCambia %}

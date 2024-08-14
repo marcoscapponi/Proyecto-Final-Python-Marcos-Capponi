@@ -1,0 +1,10 @@
+{% if miFormulario3.errors %}
+<p style="color: red;">Estan mal los datos, revisar</p>
+{% endif %}
+
+<form action="" method="POST">{% csrf_token %}
+    <table>
+        {{miFormulario3.as_table}}
+    </table>
+    <input type="submit", value="Enviar">
+</form>
