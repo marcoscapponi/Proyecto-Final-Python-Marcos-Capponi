@@ -1,10 +1,14 @@
+{% extends "appFinal/base.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
 {% if miFormulario3.errors %}
 <p style="color: red;">Estan mal los datos, revisar</p>
 {% endif %}
-
+<h1>Cargar Habilidad o Idioma</h1>
 <form action="" method="POST">{% csrf_token %}
     <table>
         {{miFormulario3.as_table}}
     </table>
-    <input type="submit", value="Enviar">
+    <input type="submit", value="Agregar">
 </form>
+{% endblock contenidoQueCambia %}
