@@ -7,3 +7,4 @@ media: en la carpeta media guardaremos las imagenes de los avatares utilizados.
 proryectofinal: aqui tendremos con mayor importancia el archivo settings con una funcion fundamentwal en el funcionamiento de la aplicacion.
 proyectofinalentornovirtual: ofrece aislamiento de dependencias, facilidad para colaborar, control de paquetes y dependencias, reproducibilidad, despliegue, compatibilidad y pruebas.
 manage.py: ejecuta el servidor de desarrollo, migraciones de base de datos, crear superusuario, ejecuta el shell de django, ejecuta pruebas, crea aplicaciones django, variables de entorno y comandos personalizados.
+Tecnologias utilizadas: Python, Django, Html, Css, JavaScript.
